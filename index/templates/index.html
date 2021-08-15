@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title> Nike </title> <!-- 홈페이지 이름 -->
+    <!--
+    홈페이지 재작 준비
+    1. 부트스트랩 설치
+    2. 폰트 설정
+    -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <style>
+        @font-face {
+             font-family: 'IM_Hyemin-Bold';
+             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+             font-weight: normal;
+             font-style: normal;
+             }
+
+    </style>
+</head>
+<body>
+
+    회원가입
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- 상단 로고 -->
+    <div align="center">
+        <ul class="nav navbar-nav navbar-right"> <!-- 순서없는 목록 -->
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a> </li>
+        </ul>
+    </div>
+
+
+    <!-- 메인 메뉴 -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- 화면이 작아질경우 메뉴를 버튼으로 변경 [ 하단에 제이쿼리 작성]-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data_target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">toggle</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse"> <!-- 화면이 작아지면 없애기 -->
+                <!-- 왼쪽 메뉴 -->
+                <ul class="nav navbar-nav">
+                    <li><a href="">스페셜할인팩</a> </li>
+                    <li><a href="">프리미엄</a> </li>
+                    <li><a href="">와퍼</a> </li>
+                    <li><a href="">주니어버거</a> </li>
+                    <li><a href="">올데이킹&치킨버거</a> </li>
+                    <li><a href="">사이드</a> </li>
+                    <li><a href="">음료&디저트</a> </li>
+                </ul>
+                <!-- 오른쪽 메뉴 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">매장찾기</a> </li>
+                    <li><a href="">이벤트</a> </li>
+                    <li><a href="">딜리버리주문</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 이미지 슬라이드 [ 케러볼 ] --> <!-- id : 태그의 별명 -->      <!-- 사진 바뀌는 시간 [ 밀리초 1초=>1000 ] -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+            <!-- 총 사진 개수만큼 li 만들기 -->
+            <li data-target="#myCarousel" data-slie-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slie-to="1"></li>
+            <li data-target="#myCarousel" data-slie-to="2"></li>
+            <li data-target="#myCarousel" data-slie-to="3"></li>
+            <li data-target="#myCarousel" data-slie-to="4"></li>
+        </ol>
+            <!-- 사진 넣기 -->
+            <div class="carousel-inner">
+                <!-- 하나의 사진 -->
+                <div class="item active">
+                    <img src="main1.png" class="img-responsive center-block">
+                </div>
+                <div class="item active">
+                    <img src="main2.png" class="img-responsive center-block">
+                </div>
+                <div class="item active">
+                    <img src="main3.png" class="img-responsive center-block">
+                </div>
+                <div class="item active">
+                    <img src="main4.png" class="img-responsive center-block">
+                </div>
+                <div class="item active">
+                    <img src="main5.png" class="img-responsive center-block">
+                </div>
+            </div>
+    </div>
+
+    <!-- 화살표 -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prav">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-- 유튜브 동영상 -->
+<div align="center">
+    <iframe width="1440px;" height="604" src="https://www.youtube.com/channel/UCqaSfiTyF72tSdi5TZ-HHmg" title="YouTube video palyer" frameborder="0" allow="accelete"
+</div>
+
+<br>
+<br>
+<!-- 메뉴 탭 -->
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#스페셜할인팩" >스페셜할인팩</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#프리미엄" >프리미엄</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#와퍼" >와퍼</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#주니어버거" >주니어버거</a>
+        </li>
+
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade" id="스페셜할인팩">
+            <div>
+                    <br>
+                    <table>
+                        <tr>            <!-- padding : 안쪽여백수치치 -->
+                           <td><img src="몬스터팩1.png"></td>
+                            <td><img src="몬스터팩2.png"></td>
+                            <td><img src="몬스터팩3.png"></td>
+                        </tr>
+
+                        <tr>
+
+                        </tr>
+                    </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
